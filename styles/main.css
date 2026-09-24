@@ -1,0 +1,38 @@
+*, body {
+  font-family: sans-serif;
+}
+#main a:visited, #main a:link {
+  color: maroon;
+}
+#main a:hover, #main a:focus{
+  color: steelblue;
+}
+#side a:visited, #side a:link {
+  color: steelblue;
+  font-weight: bold;
+}
+#side a:hover, #side a:focus {
+  color: maroon;
+}
+header img {
+  float: left;
+}
+header h1, header h3 {
+  text-indent: unset;
+}
+h1 {
+  color: steelblue;
+  font-style: italic;
+  text-shadow: 2px 2px 3px steelblue;
+  font-size: xxx-large;
+}
+li {
+  margin-bottom: 12px;
+}
+li:last-child {
+  margin-bottom: 0px;
+}
+footer {
+  font-size: 10px;
+  text-align: center;
+}
