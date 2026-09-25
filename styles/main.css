@@ -1,5 +1,51 @@
-*, body {
+* {
   font-family: sans-serif;
+}
+body {
+  gap: 20px;
+  box-sizing: border-box;
+  width: 900px;
+  border: 2px solid steelblue;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  box-shadow-spread: 3px;
+  margin: auto;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2,32% 60%);
+  gap: 0;
+}
+header {
+  border-bottom: 2px solid steelblue;
+  background-image: linear-gradient(to bottom, white, lightsteelblue);
+  padding-bottom: 10px;
+}
+header img {
+   float: left;
+ }
+header h1, header h3 {
+  text-indent: unset;
+}
+footer {
+  background: steelblue;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: small;
+}
+#main {
+  grid-column: 2;
+}
+#side {
+  grid-column: 1;
+}
+#main, #side{
+  padding: 20px;
+}
+.column {
+  float: left;
+  width: 245px;
 }
 #main a:visited, #main a:link {
   color: maroon;
@@ -14,12 +60,6 @@
 #side a:hover, #side a:focus {
   color: maroon;
 }
-header img {
-  float: left;
-}
-header h1, header h3 {
-  text-indent: unset;
-}
 h1 {
   color: steelblue;
   font-style: italic;
@@ -31,8 +71,4 @@ li {
 }
 li:last-child {
   margin-bottom: 0px;
-}
-footer {
-  font-size: 10px;
-  text-align: center;
 }
