@@ -126,3 +126,70 @@ nav ul ul a {
 #side a:hover, #side a:focus {
   text-decoration: none;
 }
+/*BMI*/
+#main h2 {
+  margin-top: 0;
+}
+#main h3 {
+  color: maroon;
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+#main p {
+  margin-top: 0;
+  font-size: 0.9em;
+}
+#main > ul {
+  padding-left: 30px;
+  font-size: 0.9em;
+}
+#main > ul li {
+  margin-bottom: 4px;
+}
+
+/* BMI form */
+form {
+  font-size: 0.8em;
+  margin-bottom: 15px;
+}
+fieldset {
+  border: 1px solid #444;
+  margin: 0;
+  padding: 5px 10px 10px 10px;
+}
+legend {
+  font-weight: bold;
+  padding: 0 3px;
+}
+.fields {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  align-items: center;
+  column-gap: 6px;
+  row-gap: 5px;
+  padding-left: 10px;
+  margin-bottom: 8px;
+}
+.fields label {
+  text-align: right;
+}
+.fields input {
+  box-sizing: border-box;
+  width: 32px;
+  height: 20px;
+  border: 1px solid black;
+}
+.height input:last-of-type {
+  margin-left: 6px;
+}
+#bmi_result {
+  background: #f2f2f2;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: 85px 85px;
+  justify-content: start;
+  column-gap: 15px;
+  padding-left: 10px;
+}
