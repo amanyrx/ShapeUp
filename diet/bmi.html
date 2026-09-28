@@ -56,6 +56,32 @@
     <p>Body mass index (BMI) is a measure of a person's body fat based on his or her height and weight. It can be used to determine if you are underweight, normal, overweight, or obese.</p>
     <h4>Calculate your Body Mass Index</h4>
     <p>Use the form that follows to calculate your BMI:</p>
+    <form>
+      <fieldset>
+        <legend>Enter your information</legend>
+        <div class="fields">
+          <label for="feet">Height:</label>
+          <div class="height">
+            <input type="text" id="feet" name="feet"> ft.
+            <input type="text" id="inch" name="inch"> in.
+          </div>
+
+          <label for="weight">Weight:</label>
+          <div>
+            <input type="text" id="weight" name="weight"> lbs.
+          </div>
+
+          <label for="bmi_result">BMI:</label>
+          <div>
+            <input type="text" id="bmi_result" name="bmi_result" readonly>
+          </div>
+        </div>
+        <div class="buttons">
+          <input type="button" id="calculate" value="Calculate">
+          <input type="reset" value="Reset">
+        </div>
+      </fieldset>
+    </form>
     <h4>What do my results mean? Health authorities agree that:</h4>
     <ul>
       <li><p>People with a BMI of less than 18.5 are underweight.</p></li>
