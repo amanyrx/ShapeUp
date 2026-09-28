@@ -1,0 +1,128 @@
+/* Styles copied from main */
+* {
+  font-family: sans-serif;
+}
+body {
+  box-sizing: border-box;
+  width: 900px;
+  border: 2px solid steelblue;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  margin: auto;
+}
+.container {
+  display: grid;
+  grid-template-columns: 32% 60%;
+  gap: 0;
+}
+header {
+  display: flow-root;
+  border-bottom: 2px solid steelblue;
+  background-image: linear-gradient(to bottom, white, lightsteelblue);
+  padding-bottom: 10px;
+}
+header img {
+  float: left;
+}
+header h1, header h3 {
+  text-indent: unset;
+}
+h1 {
+  color: steelblue;
+  font-style: italic;
+  text-shadow: 2px 2px 3px steelblue;
+  font-size: xxx-large;
+}
+footer {
+  background: steelblue;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: small;
+}
+#main {
+  grid-column: 2;
+}
+#side {
+  grid-column: 1;
+}
+#main, #side {
+  padding: 20px;
+}
+#side h2 {
+  color: maroon;
+  font-size: 1.2em;
+}
+#side a:visited, #side a:link {
+  color: steelblue;
+  font-weight: bold;
+}
+#side a:hover, #side a:focus {
+  color: maroon;
+}
+li {
+  margin-bottom: 12px;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* Navigation menu */
+nav {
+  background: steelblue;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+nav > ul {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+nav li {
+  position: relative;
+  margin-bottom: 0;
+}
+nav a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  font-size: small;
+  text-align: center;
+  text-decoration: none;
+}
+nav a.current {
+  color: black;
+}
+nav a:hover, nav a:focus {
+  background: lightsteelblue;
+}
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 100%;
+  background: steelblue;
+  z-index: 10;
+}
+nav li:hover > ul,
+nav li:focus-within > ul {
+  display: block;
+}
+nav ul ul a {
+  white-space: nowrap;
+}
+
+/* Sidebar list */
+#side ul {
+  padding-left: 0;
+  list-style-position: inside;
+}
+#side a:link, #side a:visited,
+#side a:hover, #side a:focus {
+  text-decoration: none;
+}
