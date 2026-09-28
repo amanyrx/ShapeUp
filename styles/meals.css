@@ -151,7 +151,7 @@ fieldset p {
   font-size: 1em;
 }
 
-/* Tell us about yourself: labels and controls aligned in a grid */
+/* labels and controls aligned in a grid */
 .fields {
   display: grid;
   grid-template-columns: auto auto;
