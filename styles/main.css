@@ -60,15 +60,76 @@ footer {
 #side a:hover, #side a:focus {
   color: maroon;
 }
+#side h2 {
+  color: maroon;
+}
 h1 {
   color: steelblue;
   font-style: italic;
   text-shadow: 2px 2px 3px steelblue;
   font-size: xxx-large;
 }
+h3 {
+  color: maroon;
+}
 li {
   margin-bottom: 12px;
 }
 li:last-child {
   margin-bottom: 0px;
+}
+nav {
+  background: steelblue;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+nav > ul {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2em;
+  justify-content: center;
+}
+nav li {
+  position: relative;
+  margin-bottom: 0;
+}
+nav a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav a.current {
+  color: black;
+}
+nav a:hover, nav a:focus {
+  background: lightsteelblue;
+}
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 100%;
+  background: steelblue;
+  z-index: 10; /*works because of absolute position, for drop down content, puts submenu in front of content*/
+}
+nav li:hover > ul,
+nav li:focus-within > ul {
+  display: block;
+}
+nav ul ul a {
+  white-space: nowrap;
+}
+#side ul {
+  padding-left: 0;
+  list-style-position: inside;
+}
+#side a:link, #side a:visited,
+#side a:hover, #side a:focus {
+  text-decoration: none;
 }
